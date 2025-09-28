@@ -1,0 +1,215 @@
+<!-- 
+Add nav bar - DONE
+Stick nav bar to top - DONE
+Add nav bar to about - DONE
+Fix nav expand button - DONE - removed and re-added the js code
+Add app images - DONE
+Add homepage grid - DONE
+Add images to grid - DONE
+Add app name - DONE
+Add app paragraphs - DONE
+Add app buttons/links - DONE
+Add about me grid - DONE
+Add images to about me grid - DONE
+Create github rep - DONE
+Deploy on netlify - DONE 
+Add SEO
+    Page titles - DONE
+    meta description - DONE
+    alt image description and title - DONE
+    links titles - DONE
+Separate contact page - DONE
+Update mobile friendly design
+    Add some space beneath launch buttons - DONE
+    Reduce header text size - DONE
+    Reduce sub header - DONE
+    Reduce paragraph text size? - DONE
+    Hide contact and about buttons on small screen - DONE
+Improve css?
+    Make homepage images smaller (Change size of grid columns for smaller images) - DONE
+    More space around parapraphs? DONE
+Over engineering the code and css? Solution video is much simpler...
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Front-end developer based in Winnipeg, Canada."
+    />
+    <title>Homepage | KeeDan204 Code</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- 
+      Including navigation bar on Home page, fixed to top
+    -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="/">kee.dan.204.code</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 
+      Headers including hi, name and location
+    -->
+    <h2>👋 Hi I am</h2>
+    <h1>KeeDan204</h1>
+    <h3>Full Stack Developer, based in the Canada</h3>
+    <!-- 
+      Div section containing links (like buttons) to the About me and Contact pages
+    -->
+    <div class="navigation-links d-none d-md-flex">
+      <a href="/about.html#contact" title="Link to contact details"
+        >Contact me
+      </a>
+      <a href="/about.html" title="Link to my bio">About me</a>
+    </div>
+    <!-- 
+      Div section containing grid with projects, descriptions and launch link/buttons
+    -->
+    <div class="container">
+      <!-- 
+        Kindness app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            src="/images/ai-cheer-image.png"
+            class="img-fluid rounded img-homepage"
+            title="Image of the kindness app"
+            alt="kindness app image"
+          />
+        </div>
+        <div class="col-md-7">
+          <h2 class="app-name">Kindness AI App</h2>
+          <p class="app-paragraph">
+            This application uses the SheCodes AI API to generate kind messages.
+            I developed the AI context and crafted the prompt to generate
+            thoughtful sentences based on topics entered by the user and to
+            diplay the text in the shown format.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2437/projects/2570569?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            title="Link to launch the kindness app"
+            >Launch Kindness App</a
+          >
+        </div>
+      </div>
+      <!-- 
+        Weather app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            src="/images/weather-app-image.png"
+            class="img-fluid rounded img-homepage"
+            title="Image of the weather app"
+            alt="Weather app image"
+          />
+        </div>
+        <div class="col-md-7">
+          <h2 class="app-name">Weather API App</h2>
+          <p class="app-paragraph">
+            This application uses the SheCodes Weather API to call the current
+            weather and a 5-day forecast for any location - as input by the
+            user, including the temperatures and weather related emojis.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2399/projects/2567385?_gl=1*2uu1na*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            title="Link to launch the weather app"
+            >Launch Weather App</a
+          >
+        </div>
+      </div>
+      <!-- 
+        World Clock app    
+        -->
+      <div class="row">
+        <div class="col-md-5">
+          <img
+            src="/images/world-clock-image.png"
+            class="img-fluid rounded img-homepage"
+            title="Image of the world clock app"
+            alt="World clock app image"
+          />
+        </div>
+        <div class="col-md-7">
+          <h2 class="app-name">World Clock API App</h2>
+          <p class="app-paragraph">
+            This application uses the SheCodes World Clock API to call the
+            current time for the user's current location - or any location input
+            by the user.
+          </p>
+          <a
+            href="https://www.shecodes.io/cohorts/2448/projects/2578390?_gl=1*12gef6g*_gcl_au*MTI0MTg5MTAwMy4xNzQzOTQ0OTA5LjEzNTEzNTQxMC4xNzQ4ODc5NTczLjE3NDg4Nzk1OTI."
+            class="launch-link"
+            target="_blank"
+            title="Link to launch the world clock app"
+            >Launch World Clock App</a
+          >
+        </div>
+      </div>
+      <!-- 
+      Footer section with signature
+    -->
+      <footer class="signature">
+        <p>
+          This project was coded by
+          <a href="https://github.com/emma-hunter-code">Emma Hunter</a>. It's
+          <a
+            href="https://github.com/emma-hunter-code/portfolio-website"
+            target="_blank"
+            >open-source on GitHub</a
+          >
+          and
+          <a href="https://whatever-weather.netlify.app/" target="_blank"
+            >hosted on Netlify</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
