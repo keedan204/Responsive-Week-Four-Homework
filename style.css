@@ -1,312 +1,266 @@
 :root {
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --header-font-family: "Playfair Display", serif;
+  --subheader-font-family: "Poppins", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --primary-color: #dc3444; /* header color */
+  --secondary-color: #0c6dfd; /* subheader and link color */
+  --tertiary-color: #fef8ea; /* hero/box/home color */
 }
 
-body {
-  margin-top: 100px;
+.container {
+  /* Removes margin on bootstrap container styling */
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+}
+
+.content-wrap {
+  /* Adds margin to the content sections */
+  margin: auto 80px;
+  padding-bottom: 40px;
+}
+
+.hero {
+  /* Formats the header section on About and Projects */
+  background-color: var(--tertiary-color);
+  padding: 100px 40px 60px 40px;
   margin-bottom: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
-/* Formatting for headers */
-
-h1,
-h2,
-h3 {
-  text-align: center;
-  margin: 0;
-  color: var(--primary-color);
-}
-
-h1 {
-  font-size: 96px;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 24px;
-  opacity: 0.7;
-  margin-bottom: 20px;
-}
-
-.app-name {
-  text-align: left;
-  margin-bottom: 5px;
-}
-
-/* Formatting for paragraph text */
-
-p {
-  padding: 15px 30px;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-.app-paragraph {
-  text-align: left;
-  padding-left: 0;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.about-paragraph p {
-  text-align: left;
-}
-
-/* Formatting for About me and Contact links/buttons */
-
-.navigation-links {
-  margin-top: 20px;
-  margin-bottom: 50px;
+.contact-box {
+  /* Formats the contact section on About and Projects */
+  background-color: rgba(250, 221, 152, 0.2);
+  padding: 40px;
   justify-content: center;
 }
 
-.navigation-links a {
-  margin: 20px;
-  padding: 15px 25px;
-  text-decoration: none;
-  text-transform: capitalize;
-  box-shadow: var(--box-shadow);
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  border-radius: 4px;
-}
-
-.navigation-links a:hover {
-  opacity: 0.7;
-}
-
-/* Formatting for launch links/buttons */
-
-.launch-link {
-  border-radius: 4px;
-  padding: 15px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
+.btn {
+  /* Formats the contact button on About and Projects */
+  padding: 10px 20px;
+  margin-left: 20px;
+  border-radius: 3px;
+  background-color: black;
   color: white;
 }
 
-.launch-link:hover {
-  opacity: 0.7;
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  text-decoration: none;
 }
 
-/* Formatting for email address and bio links*/
+/* Font families */
 
-.email-link {
-  text-decoration: none;
+h1,
+h3,
+h4 {
+  font-family: var(--header-font-family);
+}
+
+h2,
+p {
+  font-family: var(--subheader-font-family);
+}
+
+/* Font formatting */
+
+h1 {
+  /* Headers on About and Projects */
+  font-optical-sizing: auto;
+  font-size: 72px;
   font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 
-.email-link:hover {
-  text-decoration: underline;
+.hero-home h2 {
+  /* Subheader on Home */
+  font-size: 60px;
+  margin-bottom: 60px;
 }
 
-.bio-link {
-  text-decoration: none;
-  color: var(--primary-color);
+h2 {
+  /* Subheaders on Home, About and Projects */
+  font-weight: 100;
+  font-style: normal;
 }
 
-.bio-link:hover {
-  text-decoration: underline;
+h3 {
+  /* Button text on Home, sub-subheaders on About and Projects */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 28px;
 }
 
-/* Formatting for images (all pages) and grid (about page) */
-
-img {
-  box-shadow: var(--box-shadow);
-  margin-bottom: 70px;
+h4 {
+  /* Text in contact box on About and Projects */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.about-img-grid {
-  margin: 0px 20px;
+.btn h4 {
+  /* Text in button on contact box on About and Projects */
+  font-size: 20px;
 }
 
-/* Formatting for signature */
-
-.signature p {
-  font-size: 14px;
-  color: var(--primary-color);
+p {
+  /* Formats paragraphs on About and Projects */
   opacity: 0.7;
-  padding: 10px;
-  margin-top: 0;
-  font-family: monospace;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+a {
+  /* Formats links on About and Projects (links on Home has different styling)*/
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*HOMEPAGE*/
+
+.hero-home {
+  /* Formats hero differently on Home as the color floods the page*/
+  background-color: var(--tertiary-color);
+  padding: 100px 40px 60px 40px;
+  height: 100%;
   text-align: center;
 }
 
-/* Formatting for medium-large screens */
-
-@media (max-width: 992px) {
-  h1 {
-    font-size: 54px;
-    line-height: 1.5;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin-top: 20px;
-  }
-
-  h3 {
-    padding: 0px 20px;
-    margin-bottom: 0px;
-  }
-
-  .navigation-links {
-    margin-bottom: 20px;
-  }
-
-  .app-name {
-    margin-bottom: 10px;
-  }
-
-  .img-homepage {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .app-paragraph {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-
-  .launch-link {
-    display: block;
-    text-align: center;
-    margin: 20px 20px;
-    padding: 5px 5px;
-    font-size: 14px;
-  }
-
-  .about-paragraph p {
-    text-align: left;
-    margin: 0px;
-  }
-
-  .img-about {
-    margin: 0px;
-  }
-
-  .contact-header {
-    margin-top: 20px;
-  }
+.buttons-home-container {
+  /* Places buttons on homepage */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 30px; /* Adds space between buttons and headers */
+  margin-bottom: 60px; /* Adds space between buttons and footer */
 }
 
-/* Formatting for medium screens */
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 54px;
-    line-height: 1.5;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin-top: 20px;
-  }
-
-  h3 {
-    padding: 0px 20px;
-    margin-bottom: 0px;
-  }
-
-  .navigation-links {
-    margin-bottom: 20px;
-  }
-
-  .app-name {
-    margin-bottom: 10px;
-  }
-
-  .img-homepage {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .app-paragraph {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-
-  .launch-link {
-    display: block;
-    text-align: center;
-    margin: 20px 20px;
-    padding: 5px 5px;
-    font-size: 14px;
-  }
-
-  .about-paragraph p {
-    text-align: left;
-    margin: 0px;
-  }
-
-  .img-about {
-    margin: 0px;
-  }
-
-  .contact-header {
-    margin-top: 20px;
-  }
+.buttons-home a {
+  /* Formats link text to black - not blue */
+  color: black;
 }
 
-/* Formatting for small screens */
+.buttons-home {
+  /* Creates space and formatting for each button */
+  padding: 60px 60px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
 
-@media (max-width: 576px) {
+.buttons-home:hover {
+  /* Hover formatting for buttons */
+  background-color: black;
+}
+
+.buttons-home:hover a {
+  /* Hover formatting for button text */
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*ABOUT ME PAGE*/
+
+.about-photo {
+  /* Formatting inages on About me page*/
+  max-width: 80%;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  margin: 10px;
+}
+
+/*PROJECTS PAGE*/
+
+.ptc-left {
+  /*Placeemnt of project details on left side*/
+  text-align: start;
+  margin: 0;
+}
+
+.project-image {
+  /* Formatting of project images */
+  box-shadow: var(--box-shadow);
+  padding: 5px !important;
+  max-width: 500px;
+  margin-bottom: 20px !important;
+}
+
+.launch {
+  /* Formatting of launch text */
+  font-weight: bold;
+}
+
+/* Formatting for footer and signature */
+
+footer {
+  /* Placement of signature */
+  text-align: center;
+}
+
+.signature p {
+  /* Formatting signature text */
+  font-size: 12px;
+  color: black;
+  opacity: 0.6;
+  font-family: monospace;
+  margin: 20px;
+}
+
+/* Formatting for smaller screens */
+
+@media (max-width: 900px) {
   h1 {
-    font-size: 48px;
-    line-height: 1;
-    margin-bottom: 10px;
+    font-size: 36px;
   }
-
-  h2 {
+  h3 {
     font-size: 24px;
   }
-
-  h3 {
-    padding: 0px 20px;
-    margin-bottom: 0px;
+  p {
+    font-size: 16px;
   }
-
-  .app-name {
+  .hero {
+    padding: 80px 20px 20px 20px;
+    margin-bottom: 20px;
+  }
+  .content-wrap {
+    margin: auto 20px;
+    padding-bottom: 0px;
+  }
+  .row {
+    margin-bottom: 20px !important;
+    padding-bottom: 20px !important;
+    padding-top: 0px !important;
+  }
+  .col-md-9 {
+    padding-left: 15px !important;
+  }
+  .hero-home {
+    padding: 60px 20px 20px 20px;
+  }
+  .hero-home h2 {
+    font-size: 36px;
     margin-bottom: 10px;
   }
-
-  .img-homepage {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-
-  .app-paragraph {
-    margin: 0px !important;
-    padding: 0px !important;
-  }
-
-  .launch-link {
+  .buttons-home-container {
     display: block;
-    text-align: center;
-    margin: 20px 20px;
-    font-size: 14px;
+    margin-top: 10px; /* Adds space between buttons and headers */
+    padding: 0px;
   }
-
-  .about-paragraph p {
-    text-align: left;
-    margin: 0px;
-  }
-
-  .img-about {
-    margin: 0px;
-  }
-
-  .contact-header {
-    margin-top: 20px;
+  .buttons-home {
+    margin: 20px;
   }
 }
