@@ -1,0 +1,312 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Formatting for headers */
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.app-name {
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+/* Formatting for paragraph text */
+
+p {
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.app-paragraph {
+  text-align: left;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.about-paragraph p {
+  text-align: left;
+}
+
+/* Formatting for About me and Contact links/buttons */
+
+.navigation-links {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+}
+
+.navigation-links a:hover {
+  opacity: 0.7;
+}
+
+/* Formatting for launch links/buttons */
+
+.launch-link {
+  border-radius: 4px;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+
+.launch-link:hover {
+  opacity: 0.7;
+}
+
+/* Formatting for email address and bio links*/
+
+.email-link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.bio-link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.bio-link:hover {
+  text-decoration: underline;
+}
+
+/* Formatting for images (all pages) and grid (about page) */
+
+img {
+  box-shadow: var(--box-shadow);
+  margin-bottom: 70px;
+}
+
+.about-img-grid {
+  margin: 0px 20px;
+}
+
+/* Formatting for signature */
+
+.signature p {
+  font-size: 14px;
+  color: var(--primary-color);
+  opacity: 0.7;
+  padding: 10px;
+  margin-top: 0;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Formatting for medium-large screens */
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 54px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+  }
+
+  .navigation-links {
+    margin-bottom: 20px;
+  }
+
+  .app-name {
+    margin-bottom: 10px;
+  }
+
+  .img-homepage {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .app-paragraph {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .launch-link {
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+
+  .about-paragraph p {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .img-about {
+    margin: 0px;
+  }
+
+  .contact-header {
+    margin-top: 20px;
+  }
+}
+
+/* Formatting for medium screens */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 54px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+  }
+
+  .navigation-links {
+    margin-bottom: 20px;
+  }
+
+  .app-name {
+    margin-bottom: 10px;
+  }
+
+  .img-homepage {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .app-paragraph {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .launch-link {
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+
+  .about-paragraph p {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .img-about {
+    margin: 0px;
+  }
+
+  .contact-header {
+    margin-top: 20px;
+  }
+}
+
+/* Formatting for small screens */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    padding: 0px 20px;
+    margin-bottom: 0px;
+  }
+
+  .app-name {
+    margin-bottom: 10px;
+  }
+
+  .img-homepage {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .app-paragraph {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  .launch-link {
+    display: block;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: 14px;
+  }
+
+  .about-paragraph p {
+    text-align: left;
+    margin: 0px;
+  }
+
+  .img-about {
+    margin: 0px;
+  }
+
+  .contact-header {
+    margin-top: 20px;
+  }
+}
